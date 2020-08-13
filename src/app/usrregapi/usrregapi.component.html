@@ -1,0 +1,19 @@
+
+
+status -->{{status}}
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+
+    
+
+    USER NAME:-<input type="text" formControlName="uName">
+    <br>
+   USER Email:-<input type="text" formControlName="uEmail">
+    <br>
+   USER Password:-<input type="text" formControlName="uPassword">
+    <br>
+   
+    USER Age:-<input type="text" formControlName="uAge">
+    <br>
+    <button type="submit">submit</button>
+
+</form>

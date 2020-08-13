@@ -1,0 +1,10 @@
+<p>parent works!</p>
+<div>
+    <div class="row-md-5">
+        <button type="button" (click)="start()">start</button>
+        <button type="button" (click)="stop()">stop</button>
+    </div>
+</div>    
+<router-outlet></router-outlet>
+<a [routerLink]="['child1']">child1</a>
+<a [routerLink]="['child2']">child2</a>

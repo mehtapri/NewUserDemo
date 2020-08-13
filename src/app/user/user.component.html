@@ -1,0 +1,16 @@
+<p>user works!</p>
+<h1>User componennt</h1>
+SORT:<button type="button" (click)="sort()">{{sortname}}</button>
+
+Filter<input type="text" (keyup)="filterData($event.target.value)">
+<ul *ngFor="let usr of user">
+
+    <div *ngIf ="emp.salary >= 10000">
+        <li>name -> {{usr.name}}</li>
+        <li>email -> {{usr.email}}</li>
+        <li>email -> {{usr.password}}</li>
+        <li>isActive -> {{emp.status}}</li>
+    </div>
+
+
+</ul>

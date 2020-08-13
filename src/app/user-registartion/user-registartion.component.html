@@ -1,0 +1,42 @@
+<p>user-registartion works!</p>
+
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">UserName</th>
+                <th scope="col">UserEmail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><input type="text" [(ngModel)]="user_name" formControlName="user_name">Enter Name:-
+                    {{user_name}}
+                    <span *ngIf="myForm.get('user_name').invalid && myForm.get('user_name').touched">
+                        User Name is required..
+                    </span>
+
+                </td>
+                <td><input type="text" [(ngModel)]="user_email" formControlName="user_email">Enter Email:-
+                    {{user_email}}
+
+                </td>
+                <td><input type="password" formControlName="user_password">Enter password:-
+
+                </td>
+               
+
+            </tr>
+            <tr>
+                <td><button class="btn btn-danger" type="submit">SUBMIT</button></td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+</form>
+
+<br>
+<br>
