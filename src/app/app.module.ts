@@ -13,7 +13,6 @@ import {MenuItem} from 'primeng/api';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastModule} from 'primeng/toast';
 import {TableModule} from 'primeng/table';
-
 import { HttpUsersComponent } from './http-users/http-users.component';
 import {DropdownModule} from "primeng/dropdown";
 import { ChartModule } from 'primeng/primeng';
@@ -24,6 +23,9 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MenuComponent } from './menu/menu.component';
+import {MenubarModule} from 'primeng/menubar';
+import { FormsDemoComponent } from './forms-demo/forms-demo.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HttpUsersComponent,
     ParentComponent,
     Child2Component,
-    Child1Component
+    Child1Component,
+    MenuComponent,
+    FormsDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +54,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatRadioModule,
     MatFormFieldModule,
     FormsModule,
+    MenubarModule,
     LoadingBarRouterModule,
-    LoadingBarModule
-    
+    LoadingBarModule    
   
   ],
   providers: [],
